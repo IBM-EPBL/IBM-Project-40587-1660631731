@@ -1,0 +1,162 @@
+@media (max-width: 1120px) {}
+
+@media (max-width: 992px) {
+  .hero_area::before {
+    width: 100px;
+  }
+
+  .custom_nav-container .nav_search-btn {
+    background-position: center;
+  }
+
+  .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    padding: 5px;
+  }
+
+  .slider_section .carousel-control-prev,
+  .slider_section .carousel-control-next {
+    right: 100px;
+  }
+
+  .people_section .people_container.c-1 {
+    padding-right: 10%;
+  }
+
+  .people_section .people_container.c-2 {
+    padding-left: 10%;
+  }
+
+  .info_section .social-box {
+    margin: 25px 0;
+    justify-content: center;
+    display: flex;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_area {
+    height: auto;
+  }
+
+  .hero_area::before {
+    display: none;
+  }
+
+  .slider_section {
+    padding: 45px 0 250px 0;
+    text-align: center;
+  }
+
+  .slider_section .indicator_box {
+    display: none;
+  }
+
+  .slider_section .carousel-control-prev,
+  .slider_section .carousel-control-next {
+    top: initial;
+    bottom: 160px;
+    right: 50%;
+  }
+
+  .slider_section .carousel-control-prev {
+    transform: translate(-10%, 0);
+
+  }
+
+  .slider_section .carousel-control-next {
+
+    transform: translate(110%, 0);
+
+  }
+
+  .slider_section .detail-box a {
+    margin-top: 5px;
+  }
+
+  .find_section .form_container {
+    flex-direction: column;
+  }
+
+  .find_section .form_container .box input {
+    text-align: center;
+    border: none;
+  }
+
+  .find_section form .form-control {
+    background-color: #f3f3f3;
+    margin: 5px 0;
+  }
+
+  .find_section .form_container {
+    background-color: transparent;
+  }
+
+  .find_section form .btn-box button {
+    margin-top: 5px;
+  }
+
+  .info_section .container {
+    padding: 45px 15px;
+  }
+
+  .info_section .row>div {
+    margin: 15px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info_section form button {
+    margin-bottom: 25px;
+  }
+
+  .info_section .info_link-box a {
+    justify-content: center;
+  }
+
+  .client_section #carouselExampleControls {
+    margin: 45px 15px 0 15px;
+  }
+
+  .people_section .people_container.c-1,
+  .people_section .people_container.c-2 {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .form_container form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info_section .form_container input {
+    margin: 25px 0;
+    text-align: center;
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .find_section form {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 420px) {
+  .slider_section .detail-box h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 360px) {}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
