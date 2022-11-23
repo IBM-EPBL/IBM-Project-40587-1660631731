@@ -1,0 +1,26 @@
+<head>
+    <style>
+      .user{
+        color:white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{% url 'home' %}">HOME</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+        
+      </div>
+      {% if request.user.is_authenticated %}
+      <span class="user">Hello, {{request.user}}  &nbsp;</span>
+      <span ><a  class="user btn btn-info" href ="{% url 'logout' %}"> Logout</a></span>
+      {% else %}
+          <span ><a class="user" href="">Login</a></span>>
+          <span ><a class="user" href="{% url 'register' %}">Register</a></span>>
+      {% endif  %}
+    </nav>

@@ -1,0 +1,211 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>job search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Cat Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='static/css'>
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='static/static/text/css'>
+<script src="static/js/jquery-1.11.1.min.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        nav{
+            background: grey;
+            height: 80px;
+            width: 100%;
+        }
+      nav ul{
+            float: right;
+          margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 60px;
+            margin: 0 5px;
+        
+        }
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        a.active,a:hover{
+            background: #1b9bff;
+            transition: .5s;
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none
+        }
+        @media (max-width: 952px){
+            nav ul li a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 858px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px
+            
+            }
+            nav ul li a{
+                font-size: 20px;
+            
+            }
+            a:hover,a.active{
+                background: none;
+                color: #0082e6;
+            }
+            #checkchecked ~ ul{
+                left: 0;
+            }
+        }
+        
+    </style>
+    </head>
+<body style="background-color: #080710; color: white;">
+<h1 align= 'center'>
+							<a style="color: white; " href="/">JOB SEARCH</a>
+						</h1>   
+    <nav>  <input type="checkbox" id="check" >
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i></label>
+        <ul>  
+
+									<li><a href="/">Home</a></li>
+									<li><a href="/adminlogin">Admin Login</a></li>
+									<li><a href="/UserLogin">User Login</a></li>
+									<li><a href="/RNewUser">New User</a></li>
+
+                                    	
+								</ul> </nav> 
+         <form id="form" name="form" method="post" action="/RNewUser">
+	   <div align="center" ><h2>  <strong>New User Registration</strong>  </h2> </div>
+              <table width="35%" border="0" align="center">
+
+    <tr>
+          <td></td>
+    </tr>
+    <tr>
+      <td width="45%" height="48">Name</td>
+      <td width="55%"><input name="name" type="text" id="name"  required pattern="[A-Za-z ]{3,32}"/>
+      </td>
+    </tr>
+    <tr>
+      <td height="50">Gender</td>
+      <td><input name="gender" type="radio" value="male" required />
+        Male
+          <input name="gender" type="radio" value="female" />
+          Female</td>
+
+    </tr>
+    <tr>
+      <td height="49">Age</td>
+      <td>
+        <input name="age" type="text" id="age" required size="3" />
+      </td>
+    </tr>
+    <tr>
+      <td height="48">Email Id</td>
+      <td><input name="email" type="email" id="email" required /></td>
+    </tr>
+	  <tr>
+      <td height="46">Phone Number </td>
+      <td><input name="phone" type="text" id="phone"   required size="10" pattern="[0-9]{10}"/></td>
+    </tr>
+
+
+	   <tr>
+      <td height="50">Address</td>
+      <td><textarea name="address" id="address" required></textarea></td>
+       </tr>
+
+    <tr>
+      <td height="40">User Name</td>
+      <td><input name="uname" type="text" id="uname"  required/></td>
+    </tr>
+
+
+    <tr>
+     <td height="53">Passwrod</td>
+      <td><input name="psw" type="password" id="psw"  required/></td>
+    </tr>
+
+	<tr>
+      <td height="72">&nbsp;</td>
+      <td><input name="btn" type="submit" id="btn" value="Submit" />
+      <input type="reset" name="Submit2" value="Reset" /></td>
+    </tr>
+  </table>
+            </form>
+      <!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<p>©  All rights reserved | Design by <a href="#">JOB AND SKILL</a></p>
+		</div>
+	</div>
+	<!-- //copyright -->
+	<script src="static/js/responsiveslides.min.js"></script>
+	<script src="static/js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="static/js/move-top.js"></script>
+<script type="text/javascript" src="static/js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        /*
+	        var defaults = {
+	        containerID: 'toTop', // fading element id
+	        containerHoverID: 'toTopHover', // fading element hover id
+	        scrollSpeed: 1200,
+	        easingType: 'linear' 
+	        };
+	        */
+
+	        $().UItoTop({ easingType: 'easeOutQuart' });
+
+	    });
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

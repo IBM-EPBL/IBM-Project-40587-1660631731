@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>job and skill</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}"  />
+
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form method="post" action="/RNewUser">
+        <h3>Login Here</h3>
+
+        <label for="name">Username</label>
+        <input name="name" type="text" id="name"  required pattern="[A-Za-z ]{3,32}"/>
+
+        <label for="psw">Password</label>
+        <input name="psw" type="password" id="psw"  required/>
+
+           <label>Gender</label>
+        <input name="gender" type="radio" value="male" required />
+        Male
+          <input name="gender" type="radio" value="female" />
+          Female</td>
+
+         <label for="age">Age</label>
+         <input name="age" type="text" id="age" required size="3" />
+
+        <label for="email">email</label>
+        <input name="email" type="email" id="email" required />
+
+          <label for="phone">Phone Number</label>
+        <input name="phone" type="text" id="phone"   required size="10" pattern="[0-9]{10}"/>
+
+        
+
+
+        <button>Log In</button>
+        <div class="social">
+          <div class="go"><a href="/RNewUser"> Register</a></div>
+          <div class="fb">  Admin</div>
+        </div>
+    </form>
+</body>
+</html>

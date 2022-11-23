@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+{% load static%}
+
+{% block content %}
+<div class="container card">
+    <h1>Candidates applied</h1>
+    <div class="card-body">
+        <table class="table table-hover">
+            <tr>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Resume</th>
+                <th>Gender</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            {% for c in candidates %}
+                <tr>
+                    <td>{{c.name}}</td>
+                    <td>{{c.dob}}</td>
+                    {% if c.resume %}
+                    <td><a href='{{c.resume.url}}' download >{{c.resume}}</td></a></td>
+                    {% else %}
+                    <td>Not submitted</td>
+                    {% endif %}
+                    <td>{{c.gender}}</td>
+                    <td>{{c.mobile}}</td>
+                    <td>{{c.email}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+{% endblock %}
