@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Workociti">
+  <meta name="author" content="Workociti">
+  <meta name="keywords" content="Workociti">
+
+  <!-- Title Page-->
+  <title>Signup</title>
+
+  <!-- Font special for pages-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+  <!-- Main CSS-->
+  <link href="static/css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+  <div class="page-wrapper bg-dark p-t-100 p-b-50">
+    <div class="wrapper wrapper--w900">
+      <div class="card card-6">
+        <div class="card-heading">
+          <h2 class="title">Apply for job</h2>
+        </div>
+        <div class="card-body">
+          <form method="POST" action="/index">
+
+          <h1>Enter your details or upload your resume</h1>
+
+
+            <!--email-->
+            <div class="form-row">
+              <div class="name">Email address *</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" type="email" name="email"  id="email" placeholder="example@email.com">
+                </div>
+              </div>
+            </div>
+
+            <!--Password-->
+            <div class="form-row">
+              <div class="name">Password</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" type="password" name="pass" id="password" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <!--Confirm Password-->
+            <div class="form-row">
+              <div class="name">Re Type Password</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" type="password" name="repass" id="confirm_password" onkeyup="validatePassword();" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <!--name-->
+            <div class="form-row">
+              <div class="name">Full name</div>
+              <div class="value">
+                <input class="input--style-6" type="text" name="full_name">
+              </div>
+            </div>
+
+            <!--DOB-->
+            <div class="form-row">
+              <div class="name">Date Of Birth</div>
+              <div class="value">
+                <input class="input--style-6" type="date" name="dob">
+              </div>
+            </div>
+
+            <!--gender-->
+            <div class="form-row">
+              <div class="name col-lg-2">Gender</div>
+              <div class="default-select" id="default-select">
+
+                <select class="col-lg-10">
+                  <option value="1">Male</option>
+                  <option value="1">Female</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="form-row">
+              <div class="name">Qualification</div>
+              <!--Qualification-->
+
+              <div>
+                <div class=" form-row">
+                  <div class="name">12th</div>
+                  <div class="value">
+                    <input class="input--style-6" type="text" name="course" placeholder="course">
+                    <input class="input--style-6" type="number" name="marks" placeholder="marks">
+                  </div>
+                </div>
+                <div>
+                  <div class=" form-row">
+                    <div class="name">Under-Graduation</div>
+                    <div class="value">
+                      <input class="input--style-6" type="text" name="course" placeholder="course">
+                      <input class="input--style-6" type="text" name="Specialization" placeholder="Specialization">
+                      <input class="input--style-6" type="number" name="marks" placeholder="marks">
+                    </div>
+                  </div>
+                </div>
+                <div class=" form-row">
+                  <div class="name">Masters</div>
+                  <div class="value">
+                    <input class="input--style-6" type="text" name="splecialization" placeholder="Specialization">
+                    <!--  <input class="input-style-6" type="number" name="marks" placeholder="marks">-->
+                  </div>
+                </div>
+
+                <div class=" form-row">
+                  <div class="name">Phd</div>
+                  <div class="value">
+                    <input class="input--style-6" type="text" name="paper" placeholder="Paper_presentation">
+                    <!--  <input class="input-style-6" type="number" name="marks" placeholder="marks">-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of Qualification-->
+
+            <!--Salary-->
+            <div class="form-row">
+              <div class="name">Current Salary</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" name="Salary" type="number" placeholder="Enter the Salary"></input>
+                </div>
+              </div>
+            </div>
+
+            <!--Notice period-->
+            <div class="form-row">
+              <div class="name">Notice Period(days)</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" name="notice" type="number" placeholder="Enter the Notice period"></input>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="name">Experience</div>
+              <!--experience-->
+
+              <div>
+                <div class=" form-row">
+                  <div class="name">Working Period</div>
+                  <div class="value">
+
+                    <input class="input--style-6" type="date" name="from">
+
+                    <input class="input--style-6" type="date" name="to">
+                    <textarea class="textarea--style-6" name="job_description" placeholder="Enter the job description"></textarea>
+
+
+
+
+
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+            <!--Skill Sets-->
+            <div class="form-row">
+              <div class="name">Skill Sets</div>
+              <div class="value">
+                <input class="input--style-6" type="text" name="skill" placeholder="Enter Your skills">
+              </div>
+            </div>
+
+
+            <!--Current Address-->
+            <div class="form-row">
+              <div class="name">Current Address</div>
+              <div class="value">
+                <div class="input-group">
+                  <textarea class="textarea--style-6" name="address" placeholder="Enter your Address"></textarea>
+                </div>
+              </div>
+            </div>
+
+
+            <!--location-->
+            <div class="form-row">
+              <div class="name col-lg-2">Location</div>
+              <div class="default-select" id="default-select">
+
+                <select class="col-lg-6">
+                  <option value="1">Chennai</option>
+                  <option value="1">Trichy</option>
+                  <option value="1">Bangalore</option>
+                  <option value="1">Coimbatore</option>
+                    <option value="1">Hyderabad</option>
+                  <option value="1">Pune</option>
+                </select>
+              </div>
+              <pre>     </pre>
+
+              <div class="col-lg-4">
+                <input class="input--style-6" type="text" name="city">
+
+              </div>
+            </div>
+
+
+
+            <div class="form-row">
+              <div class="name">Message</div>
+              <div class="value">
+                <div class="input-group">
+                  <textarea class="textarea--style-6" name="message" placeholder="Message sent to the employer"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="name">Upload CV</div>
+              <div class="value">
+                <div class="input-group js-input-file">
+
+                  <label class="label--file" for="file">Choose file</label>
+                 <input type="file" name="img" style="color: #33C7B7;" id="file">
+
+                </div>
+                <div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn--radius-2 btn--blue-2" type="submit"><a style="text-decoration: none; color: white;" href="/index">Send Application</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jquery JS-->
+  <script src="signup/vendor/jquery/jquery.min.js"></script>
+
+  <!--confirm password-->
+  <script>
+    var password = document.getElementById("password"),
+      confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword() {
+      if (password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+  </script>
+
+  <!-- Main JS-->
+  <script src="signup/js/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
